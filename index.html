@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="contest2style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Librart-System</a></li>
+            <li class="li"><a href="#section2">Books</a></li>
+            <li class="li"><a href="#section1">Register</a></li>
+        </ul>
+    </nav>
+
+<section id="section1">
+    <h1>Registration Form</h1>
+<form action="" method="post">
+
+    <div>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Your First Name" required >
+    </div><br>
+
+    <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Your Last Name" required>
+    </div><br>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Your email address" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" title="enter a valid email address" required>
+    </div><br>
+
+    <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" placeholder="your date of birth" required>
+    </div><br>
+
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="mark your age" min="5" max="100" required>
+    </div><br>
+
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="write your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    </div><br>
+
+    <div>
+        <label for="pass">Confirm Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="write password again" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    </div><br>
+
+    <button type="submit">Register</button>
+
+</form>
+</section>
+
+<section id="section2">
+        <h1>Books</h1>
+        <table border="1" cellspacing="0px">
+            <tr>
+                <th>Book Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+             
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" target="_blank">Nineteen Eighty-Four</a><br>
+                    <table border="1" cellspacing="0px">
+                        <tr>
+                            <td>Publication Date:1949</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:328</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:423-45683932</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>George Orwell</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+    
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_God_of_Small_Things" target="_blank">The God of Small Things </a><br>
+                    <table border="1" cellspacing="0px">
+                        <tr>
+                            <td>Publication Date:1997</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:421</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:0-06-097749-3</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Arundhati Roy</td>
+                <td>Story</td>
+                <td>Available</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>
+                    <a href="https://www.amazon.in/Combat-Shadows-Manohar-Malgonkar/dp/8129124726" target="_blank">Combat of Shadows</a><br>
+                    <table border="1" cellspacing="0px">
+                        <tr>
+                            <td>Publication Date:1962</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:136</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:343-4312932</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Manohar Malgonkar</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+    
+            <tr>
+                <td>4</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Godaan" target="_blank">Godan</a><br>
+                    <table border="1" cellspacing="0px">
+                        <tr>
+                            <td>Publication Date:1936</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:350</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:903-45683932</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Munshi Premchand</td>
+                <td>Hindi Novel</td>
+                <td>Available</td>
+            </tr>
+    
+            <tr>
+                <td>5</td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Guide" target="_blank">The Guide</a><br>
+                    <table border="1" cellspacing="0px">
+                        <tr>
+                            <td>Publication Date:1958</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:220</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:833-45683932</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>R.K. Narayan</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </tr>
+    
+        </table>
+</section>
+
+</body>
+</html>
